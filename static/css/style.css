@@ -1,0 +1,67 @@
+body {
+    overflow-x: hidden;
+    background-color: #333333;
+}
+
+.slider {
+    width: 100vw;
+    height: 570px;
+    background-color: #333333;
+    margin: 75px auto;
+    position: relative;
+  }
+  
+  .slide {
+    width: 100vw;
+    height: 570px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    
+    animation: fade 20s infinite;
+  }
+  
+  .slide:nth-child(1) {
+    background: url('/static/img/Banner2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .slide:nth-child(2) {
+    background: url('/static/img/banner2_0.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-delay: 5s;
+  }
+  .slide:nth-child(3) {
+    background: url('/static/img/Banner3.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-delay: 10s;
+  }
+  .slide:nth-child(4) {
+    background: url('/static/img/Banner4.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-delay: 15s;
+  }
+  .slide:nth-child(5) {
+    background: url('/static/img/Banner6.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-delay: 15s;
+  }
+  
+  
+  @keyframes fade {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    25% { opacity: 1; }
+    30% { opacity: 0; }
+  }
